@@ -1,0 +1,31 @@
+<body>
+  <div class="container">
+   <div id="signup">
+      <div class="signup-screen">
+         <div class="space-bot text-center">
+            <h1>Sign up</h1>
+           <div class="divider"></div>
+         </div>
+           <form class="form-register" method="post" name="register" novalidate>
+            
+              <input id="username" type="text" name="username" class="validate" [(ngModel)] = "username" required>
+              <label for="username">Username</label>
+             
+             
+              <input id="email" type="email" name="email" [(ngModel)]="email" class="validate" required>
+              <label for="email">Email</label>
+             
+             
+               <input id="password" type="password" name="password" [(ngModel)]="password" class="validate" required>
+               <label for="password">Password</label>
+              
+              <div class="space-top text-center">
+               <button>
+               <i class="material-icons left" (click)="register()" ></i> Done
+               </button>    
+              </div>
+             </form>
+           </div>
+        </div>
+    </div>
+</body>
